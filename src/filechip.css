@@ -1,0 +1,53 @@
+/* File Chip */
+.input-area {
+    position: relative;
+    /* For positioning chip absolute if needed, or flex items */
+    flex-wrap: wrap;
+}
+
+.file-chip {
+    position: absolute;
+    top: -40px;
+    left: 20px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--glass-border);
+    padding: 4px 12px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    color: var(--text-primary);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: slideUp 0.2s ease-out;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.file-icon {
+    font-size: 1rem;
+}
+
+.remove-file-btn {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-size: 1.2rem;
+    line-height: 1;
+    padding: 0 4px;
+}
+
+.remove-file-btn:hover {
+    color: #ef4444;
+}
