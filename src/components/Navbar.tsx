@@ -1,19 +1,8 @@
-import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { useChatStore } from '../store/chatStore';
+import { Link, useLocation } from 'react-router-dom';
 import '../App.css';
 
 export default function Navbar() {
   const location = useLocation();
-  const navigate = useNavigate();
-  const { createNewChat } = useChatStore();
-
-  // const handleNewChat = async () => {
-  //   if (window.confirm("Start a new chat? This will clear the current session view.")) {
-  //     console.log("new chat");
-  //       await createNewChat();
-  //       navigate('/chat');
-  //   }
-  // };
 
   return (
     <nav className="navbar">
